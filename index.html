@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Кредитный калькулятор</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="calc__info">
+                <div class="calc__bid">Оформите заявку</div>
+                <div class="calc__percent">
+                    <span> Процентная ставка от:</span> 10,9%
+                </div>
+            </div>
+
+            <div class="calc__count">
+                <div class="calc__item">
+                    <label class="calc__name">Сумма займа</label>
+
+                    <input type="text" value="100 000" id="calc__sum" >
+                   <div class="calc__limit"> от 100 000 ₽ до 15 000 000 ₽</div>
+                </div>
+                <div class="calc__item">
+                        <label class="calc__name">На какой срок</label>
+    
+                        <input type="text" value="36" id="calc__time" >
+                       <div class="calc__limit"> от 36 до 120 месяцев</div>
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
