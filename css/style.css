@@ -14,7 +14,6 @@ body {
 .calculator {
     background: #D8DFE3;
     max-width: 752px;
-    height: 276px;;
     margin: 0 auto;
     border-radius: 5px 5px 0px 0px;
 }
@@ -29,7 +28,7 @@ body {
     font-weight: bold;
     padding-bottom: 21px;
     padding: 21px 70px;
-    border-bottom: 1PX solid #C9D0D5;
+    border-bottom: 1px solid #C9D0D5;
 }
 
 .calc__percent span {
@@ -40,7 +39,7 @@ body {
 
 
 .calc__count {
-    padding: 21px 70px; 
+    padding: 32px 70px; 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -52,7 +51,6 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     display: inline-flex;
-
 }
 
 .calc__name {
@@ -74,10 +72,56 @@ body {
     width: 293px; 
 }
 
+.calc__item input:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    outline: 0;
+}
+
 .calc__limit {
     font-weight: normal;
     line-height: 24px;
     font-size: 14px;
     color: #858585;
     padding-top: 8px;
+}
+
+.calc__final {
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+    padding: 32px 70px; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.calc__payment {
+    line-height: 24px;
+    font-size: 16px;
+    color: #454545;
+}
+
+.calc__payment span {
+    display: block;
+    font-weight: bold;
+    line-height: 56px;
+    font-size: 36px;
+    color: #DD624E;
+}
+
+.calc__button input {
+    background: #DD624E;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    height: 65px;
+    width: 293px;
+}
+
+.calc__button input:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    outline: 0;
 }
