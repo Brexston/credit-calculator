@@ -260,6 +260,15 @@ body {
     color: #858585;
 }
 
+.calc__modal_wrap label {
+    display: flex;
+    align-items: center;
+}
+
+.calc__modal_wrap input[type="checkbox" i] {
+    margin: 0 3px;
+}
+
 
 
 
@@ -297,10 +306,19 @@ body {
     .calc__item input {
         margin-top: 12px; 
     }
+    .calc__modal {
+        width: 85%;
+    }
+    .calc__modal_wrap {
+        padding: 35px 15px; 
+    }
 }
 
 @media (max-width: 360px) { 
     .calc__button input {
         width: 237px;
+    }
+    .calc__agreement {
+        font-size: 11px;
     }
 }
