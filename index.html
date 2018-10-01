@@ -23,13 +23,13 @@
             <div class="calc__count">
                 <div class="calc__item">
                     <label class="calc__name">Сумма займа</label>
-                    <input type="text" placeholder="100 000" id="calc__sum" name="sum" required>
+                    <input type="number"  value="100000" id="calc__sum" name="sum" required>
                     <div class="calc__limit"> от 100 000 ₽ до 15 000 000 ₽</div>
                 </div>
                 <div class="calc__item">
                     <label class="calc__name">На какой срок</label>
 
-                    <input type="text" placeholder="36" id="calc__time" name="time" required>
+                    <input type="text" maxlength="3" value="36" id="calc__time" name="time" required>
                     <div class="calc__limit"> от 36 до 120 месяцев</div>
                 </div>
             </div>

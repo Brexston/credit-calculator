@@ -18,4 +18,25 @@ $(document).ready(function () {
                 }
             );
     });
+
+    $("#calc__sum, #calc__time").keyup(function (event) {
+        calc();
+    });
+
+    calc();
 });
+
+function calc () {
+
+    var sum = parseInt(document.getElementById("calc__sum").value);
+    var time = parseInt(document.getElementById("calc__time").value);
+
+    const percent = 10.9 / 1200;
+    var k = percent * Math.pow(1 + percent, time) / (Math.pow(1 + percent, time) - 1);
+
+
+    var payment = k * sum;
+    payment = Math.round(payment);
+
+    document.getElementById("calc__payment").innerHTML = payment;
+}
