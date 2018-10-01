@@ -47,6 +47,29 @@
     </div>
 
 
+    <div class="calc__modal">
+        <span class="calc__close"></span>
+        <div class="calc__modal_wrap">
+            <div class="calc__modal_text"> Укажите свои контакты</div>
+            <form>
+                <input type="text" class="calc__modal_input" placeholder="Ваше имя*" name="name" required>
+                <input type="text" class="calc__modal_input" placeholder="Ваш телефон*" name="phone" required>
+                <input type="text" class="calc__modal_input" placeholder="Ваш E-mail*" name="email">
+                <input type="submit" class="calc__modal_input calc__modal_input--submit" id="send" value="Отправить заявку">
+            </form>
+            <label>    
+                <input type="checkbox" onchange="document.getElementById('send').disabled = !this.checked" checked="">
+
+                  <div class="calc__agreement"> Согласен на  обработку персональных данных</div>
+                </label>
+        </div>
+        
+    </div>
+
+    <div class="calc__overlay"></div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
