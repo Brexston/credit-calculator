@@ -27,7 +27,7 @@ $(document).ready(function () {
     });
 
     $("#calc__time").change(function (event) {
-        restrictInput(this.id, 36, 120);
+        restrictInput(this.id, 0, 120);
         calc();
     });
 
